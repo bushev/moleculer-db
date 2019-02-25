@@ -365,7 +365,16 @@ class MongooseDbAdapter {
 		} 
 		return entity;
 	}
-
+	
+	stringToObjectID(str) {
+	
+		return mongoose.Types.ObjectId(str);
+	}
+	
+	objectIDToString(objectId) {
+		
+		return objectId.toString();
+	}
 }
 
 module.exports = MongooseDbAdapter;
