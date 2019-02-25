@@ -173,7 +173,7 @@ class MongooseDbAdapter {
 	 * @memberof MongooseDbAdapter
 	 */
 	count(filters = {}) {
-		return this.createCursor(filters).countDocuments().exec();
+		return this.createCursor(filters).count().exec();
 	}
 
 	/**
